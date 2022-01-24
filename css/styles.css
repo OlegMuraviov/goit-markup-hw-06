@@ -205,7 +205,7 @@ body {
 
   color: var(--bgc-additional);
 }
-.button-hero {
+.hero-button {
   display: inline-block;
   min-width: 200px;
   border-radius: 4px;
@@ -690,6 +690,8 @@ body {
 }
 .footer-subscribe {
   margin-left: 93px;
+
+  fill: black;
 }
 .user-email-label {
   display: block;
@@ -703,23 +705,30 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--bgc-button-portfolio);
+}
+.btn-subscribe-main {
+  display: inline-flex;
 }
 .user-email-input {
   width: 360px;
   height: 50px;
+  margin-right: 12px;
 
+  color: var(--bgc-button-portfolio);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: #ffffff;
   background-color: var(--bgc-total);
 }
 .button-subscribe {
-  display: inline-block;
   min-width: 200px;
+  height: 50px;
   border-radius: 4px;
-  padding: 10px 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 62px;
 
   font-family: inherit;
   font-weight: 700;
@@ -730,6 +739,18 @@ body {
   cursor: pointer;
   text-align: center;
 }
+.button-subscribe-main {
+  position: relative;
+}
+.button-subscribe-svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-130%, 50%);
+
+  fill: var(--bgc-button-portfolio);
+}
+
 /* ---------------------MODAL--------------------- */
 .backdrop {
   position: fixed;
@@ -754,11 +775,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  min-width: 530px;
-  min-height: 580px;
+  padding: 40px;
 
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: var(--bgc-button-portfolio);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -782,4 +802,148 @@ body {
 
   width: 18px;
   height: 18px;
+}
+.modal-close-icon:hover {
+  fill: var(--hover-color);
+}
+.modal-user-title {
+  display: block;
+  margin-bottom: 12px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+}
+
+.modal-user-name-laber {
+  display: block;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--additional-text-color);
+}
+.modal-user-icon {
+  position: relative;
+}
+
+.modal-user-icon:hover {
+  fill: var(--hover-color);
+}
+.modal-user-icon:hover .modal-user-tel-input {
+  border: 1px solid var(--hover-color);
+  border-radius: 4px;
+}
+
+.modal-user-icon:hover .modal-user-name-input {
+  border: 1px solid var(--hover-color);
+  border-radius: 4px;
+}
+.modal-user-icon:hover .modal-user-email-input {
+  border: 1px solid var(--hover-color);
+  border-radius: 4px;
+}
+
+.modal-user-name-input,
+.modal-user-tel-input,
+.modal-user-email-input {
+  display: block;
+  width: 100%;
+  padding-left: 25px;
+  margin-bottom: 10px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal-user-tel-label,
+.modal-user-email-label,
+.modal-user-comment-label {
+  display: block;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--additional-text-color);
+}
+.modal-user-name-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translate(50%, 15%);
+}
+
+.modal-policy-main {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.modal-user-comment-input {
+  display: block;
+  width: 100%;
+
+  margin-bottom: 20px;
+
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.modal-policy-label {
+  margin-left: 8px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: var(--additional-text-color);
+}
+.modal-policy-agreement {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+
+  color: #2196f3;
+}
+.button-modal-send {
+  display: block;
+  text-align: center;
+  min-width: 200px;
+
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  background-color: var(--brand-color);
+  color: var(--bgc-additional);
+  cursor: pointer;
+  text-align: center;
 }
