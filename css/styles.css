@@ -706,10 +706,10 @@ body {
   width: 360px;
   height: 50px;
   margin-right: 12px;
+  padding: 15px;
 
   color: var(--bgc-button-portfolio);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: var(--bgc-total);
 }
@@ -771,10 +771,10 @@ body {
 
   padding: 40px;
 
-  border-radius: 4px;
-  background-color: var(--bgc-button-portfolio);
+  background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .modal-close-link {
@@ -817,6 +817,9 @@ body {
 }
 
 .lable {
+  display: block;
+  margin-bottom: 4px;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -937,7 +940,7 @@ body {
   fill: #ffffff;
 }
 .policy-text {
-  padding-left: 20px;
+  padding-left: 25px;
 }
 .policy {
   margin-left: 2px;
@@ -952,10 +955,22 @@ body {
   color: var(--hover-color);
 }
 .button-modal-send {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
   width: 200px;
   height: 50px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: (30 / 16);
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
